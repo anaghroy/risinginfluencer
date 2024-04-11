@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job form</title>
+    
+    <!--website icon-->
+    <link rel="icon" type="image/png" href="images/rising logo.png">
+    
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+        
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--ionic.io-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/jobform.css">
+
+</head>
+<body>
+    <!-- Header starts here-->
+
+    <header class="header">
+        <nav class="nav container flex">
+                <a href="homelogin.html" class="logo-content flex">
+                    <i class='bx bxs-florist'></i>
+                   
+                    <span class="logo-text">Rising influencer.</span>
+                </a>
+
+                <div class="menu-content">
+                        <ul class="menu-list flex">
+                                <li><a href="home.html" class="nav-link">Home</a></li>
+                                <li><a href="about.html" class="nav-link">About</a></li>
+                                <li><a href="careers.html" class="nav-link active-navlink">Careers</a></li>
+                                <li><a href="review.html" class="nav-link">Review</a></li>
+                                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                                <li><a href="contactus.html" class="nav-link">Contact us</a></li>
+                                <!--login page starts here-->
+                                <div class="profile-dropdown">
+                                        <div onclick="toggle()" class="profile-dropdown-btn">
+                                          <div class="profile-img">
+                                            <i class="fa-solid fa-circle"></i>
+                                          </div>
+                                          
+                                          <span>Account <i class="fa-solid fa-angle-down"></i></span>
+                                         </div>
+                                
+                                        <ul class="profile-dropdown-list">
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-user"></i>Edit Profile</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-envelope"></i>Inbox</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-sliders"></i>Settings</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-circle-question"></i>Help & Support</a></li>
+                                          <hr />
+                                          <li class="profile-dropdown-list-item">
+                                            <!--Logout function-->
+                                            <a href="javascript:void(0)" onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+                                        </ul>
+                                      </div>
+                                    
+                                </ul>
+                                
+                            
+                            
+                        <!--login page ends here-->
+
+                        <div class="media-icons flex">
+                                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                <a href="https://in.pinterest.com/"><i class='bx bxl-pinterest-alt'></i></a>
+                                <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                                <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+
+                        </div>
+
+                        <i class='bx bx-x navClose-btn'></i>
+                    </div>
+                    
+                    <div class="contact-content flex">
+                                           
+                    </div>
+
+                    <i class='bx bx-menu navOpen-btn'></i>
+            </nav>
+            <!--login page starts here-->
+                <!--login page ends here-->
+</header>
+<!-- Header ends here-->
+
+<!-- Home Section starts here-->
+<main>
+    <section class="home" id="home">
+            <div class="home-content">
+                    <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                            <img src="images/jobform.jpg" alt="" class="home-img">
+
+                                            <div class="home-details">
+                                                    <div class="home-text">
+                                                            <h4 class="homeSubtitle">AT RISING INFLUENCERS.</h4>
+                                                            <h2 class="homeTitle">Presentation is everything <br> Don’t rush</h2>
+                                                    </div>
+
+                                                    <button class="button">Explore</button>
+                                            </div>
+                                    </div>
+
+                                    
+                                    </div>
+                            </div>
+
+                            
+                    </div>
+            </div>
+    </section>
+<!-- Home Section ends here-->
+
+
+<!-- job form Section starts here-->
+
+<div class="blog-list-container">
+    <h2>FILL THE FORM PROPERLY</h2>
+            
+</div>
+<div class="blog-text">
+    <h1 class="section-subtitle"></h1>
+    
+</div>
+
+    
+    
+   
+</div>
+<div class="container1">
+    <form action="insert_data.php" method="POST" enctype="multipart/form-data">
+        <label  for="title"><b>APPLICATION FOR EMPLOYMENT</b></label><br><br>
+        <label  for="title"><i>We are equal opportunity employer, dedicated to a policy of nondiscrimation in employment on any basic including race, age, sex, religion, disability, or national origin.</i></label><br><br>
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Your name...">
+  
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Your last name...">
+    
+      <label for="email">Email ID*</label>
+      <input type="text" id="email" name="email" placeholder="Your email id...">
+
+      <label for="phoneno">Phone No*</label>
+      <input type="text" id="phoneno" name="phoneno" placeholder="Your phone no..">
+
+      <label for="street">Street</label>
+      <input type="text" id="street" name="street" placeholder="Your street...">
+
+      <label for="apt">Apartment/House no. & Building (optional)</label>
+      <input type="text" id="apt" name="apt" placeholder="Your address...">
+
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" placeholder="Your state...">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="Australia">Australia</option>
+        <option value="Canada">Canada</option>
+        <option value="USA">USA</option>
+        <option value="India">India</option>
+      </select>
+
+      <label for="position">Position applied for</label>
+      <select id="position" name="position">
+        <option value=" " >--Please choose an option--</option>
+        <option value="Software Engineer">Software Engineer</option>
+        <option value="Product manager">Product manager</option>
+        <option value="Data-scientist">Data-scientist</option>
+        <option value="Project manager">Project manager</option>
+        <option value="Sales Representative">Sales Representative</option>
+        <option value="Marketing manager">Marketing manager</option>
+      </select>
+
+      <label for="citizen">Are you a citizen of India</label>
+      <input type="radio" id="citizen" name="citizen" value="Yes" onchange="showDiv()">
+      <label for="citizen">Yes</label>&nbsp;&nbsp;
+      <input type="radio" id="citizen" name="citizen" value="No" onchange="hideDiv()">
+      <label for="citizen">No</label><br><br>
+
+      <div id="Others" style="display:none;"></div>
+
+      <label for="nocitizen">If no, are you authorized to work in India</label>
+      <input type="radio" id="nocitizen" name="nocitizen" value="Yes" onchange="showDiv()">
+      <label for="nocitizen">Yes</label>&nbsp;&nbsp;
+      <input type="radio" id="nocitizen" name="nocitizen" value="No" onchange="hideDiv()">
+      <label for="nocitizen">No</label><br><br>
+
+      <div id="Others" style="display:none;"></div>
+
+      <label for="company">Have you ever worked for this company</label>
+      <input type="radio" id="company" name="company" value="Yes" onchange="showDiv()">
+      <label for="company">Yes</label>&nbsp;&nbsp;
+      <input type="radio" id="company" name="company" value="No" onchange="hideDiv()">
+      <label for="company">No</label><br><br>
+
+      <div id="Others" style="display:none;"></div>
+      <label for="year">If so when? (Year)</label>
+      <input type="text" id="year" name="year" placeholder="If so when? (Year)">
+     
+      <label for="employed">Are you employed now?</label>
+      <input type="radio" id="employed" name="employed" value="Yes" onchange="showDiv()">
+      <label for="employed">Yes</label>&nbsp;&nbsp;
+      <input type="radio" id="employed" name="employed" value="No" onchange="hideDiv()">
+      <label for="employed">No</label><br><br>
+
+      <label for="employe_contact">If so, may we contact your employer?</label>
+      <input type="radio" id="employe_contact" name="employe_contact" value="Yes" onchange="showDiv()">
+      <label for="employe_contact">Yes</label>&nbsp;&nbsp;
+      <input type="radio" id="employe_contact" name="employe_contact" value="No" onchange="hideDiv()">
+      <label for="employe_contact">No</label><br><br>
+
+      <label for="employment_type">Type of employment:</label>
+      <input type="radio" id="employment_type" name="employment_type" value="Yes" onchange="showDiv()">
+      <label for="employment_type">Full-time</label>&nbsp;&nbsp;
+      <input type="radio" id="employment_type" name="employment_type" value="No" onchange="hideDiv()">
+      <label for="employment_type">Part-time</label>
+      <input type="radio" id="employment_type" name="employment_type" value="No" onchange="hideDiv()">
+      <label for="employment_type">Temporary</label><br><br>
+      
+      <label  for="education"><b>EDUCATION AND OFFICE SKILLS</b></label><br><br>
+      <label for="highschool_name">High school name</label>
+      <input type="text" id="highschool_name" name="highschool_name" placeholder="Your high school name...">
+
+      <label for="highschool_address">High school address</label>
+      <input type="text" id="highschool_address" name="highschool_address" placeholder="Your high school address...">
+
+      <label for="graduated">Did you gradute?</label>
+      <input type="radio" id="graduated" name="graduated" value="Yes" onchange="showDiv()">
+      <label for="graduated">Yes</label>&nbsp;&nbsp;
+      <input type="radio" id="graduated" name="graduated" value="No" onchange="hideDiv()">
+      <label for="graduated">No</label><br><br>
+
+      <label for="college_name">College or trade school</label>
+      <input type="text" id="college_name" name="college_name" placeholder="Your College name...">
+
+      <label for="college_address">College school address</label>
+      <input type="text" id="college_address" name="college_address" placeholder="Your college address...">
+    
+      <label  for="title"><b>EMPLOYMENT HISTORY (List present or most recent position)</b></label><br><br>
+      
+      <label for="company_name">Company name</label>
+      <input type="text" id="company_name" name="company_name" placeholder="Your company name ...">
+
+      <label for="company_address">Company Address</label>
+      <input type="text" id="company_address" name="company_address" placeholder="Your company address ...">
+
+      <label for="supervisor_name_title">Name  and title of supervisor/manager</label>
+      <input type="text" id="supervisor_name_title" name="supervisor_name_title" placeholder="Supervisor's Name and Title...">
+
+      <label for="starting_salary">Starting salary</label>
+      <input type="text" id="starting_salary" name="starting_salary" placeholder="Your starting salary..."><br>
+
+      <label for="ending_salary">Ending salary</label>
+      <input type="text" id="ending_salary" name="ending_salary" placeholder="Your ending salary..."><br>
+      
+      <label for="responsibilities">Responsibities</label>
+      <input type="text" id="responsibilities" name="responsibilities" placeholder="Responsibitie of your job...">
+      
+      <label for="reason_for_leaving">Reason for leaving</label>
+      <select id="reason_for_leaving" name="reason_for_leaving">
+        <option value=" " >--Please choose an option--</option>
+        <option value="Retired">Retired</option>
+        <option value="Lost a Job">Lost a Job</option>
+        <option value="Could not find a new job">Could not find a new job </option>
+      </select>
+
+      <label for="previous_supervisor_contact">May we contact your previous supervisor for a reference?</label>
+      <input type="checkbox" id="previous_supervisor_contact" name="previous_supervisor_contact" onclick="ContactRef()" /> Yes
+      <input type="checkbox" id="previous_supervisor_contact" name="previous_supervisor_contact" onclick="hidetRef()" /> No<br><br>
+      <div id="refinfo" style="display:none;"></div>
+
+      <label  for="acknowledgement"><h3>ACKNOWLEDGEMENT AND AUTHORIZATION</h3></label><br><br>
+      <label for="acknowledgement">I certify that all answers given herein are true and complete to the best of my knowledge.</label>
+      <input type="radio" id="acknowledgement" name="acknowledgement" value="Yes" onchange="showDiv()">
+      <label for="acknowledgement">Yes</label>&nbsp;&nbsp;
+      <input type="radio" id="acknowledgement" name="acknowledgement" value="No" onchange="hideDiv()">
+      <label for="acknowledgement">No</label><br><br>
+
+      <label for="authorize_investigation">I authorize investigation of all stements contained in this application for employment as may be necessary in arriving at an employment decision.</label>
+      <input type="radio" id="authorize_investigation" name="authorize_investigation" value="Yes" onchange="showDiv()">
+      <label for="authorize_investigation">Yes</label>&nbsp;&nbsp;
+      <input type="radio" id="authorize_investigation" name="authorize_investigation" value="No" onchange="hideDiv()">
+      <label for="authorize">No</label><br><br>
+
+      <label for="false_information_consequences">In the event of employment, I understand that false or misleading information given in my application or interview(s) may result in discharge.</label>
+      <input type="radio" id="false_information_consequences" name="false_information_consequences" value="Yes" onchange="showDiv()">
+      <label for="false_information_consequences">Yes</label>&nbsp;&nbsp;
+      <input type="radio" id="false_information_consequences" name="false_information_consequences" value="No" onchange="hideDiv()">
+      <label for="false_information_consequences">No</label><br><br>
+      <div id="false_information_consequences" style="display: none;"></div>
+
+      <label for="digital_document_type">Digital Document</label>
+      <select id="digital_document_type" name="digital_document_type">
+        <option value=" " >--Please choose an option--</option>
+        <option value="votercard">Voter card</option>
+        <option value="aadhaar card">Aadhaar card</option>
+        <option value="pan card">Pan card </option>
+        <option value="passport">Passport </option>
+      </select>
+
+      <label for="digital_document_upload">Upload Digital document of applicant (pdf,docx,jpg format only):</label>
+      <input type="file" accept=".pdf,.docx, .jpg, .png, .gif" id="digital_document_upload" name="digital_document_upload"><br><br>
+      
+      <label for="digital_signature_upload">Digital signature of applicant (PDF format only):</label>
+      <input type="file" accept=".pdf,.docx, .jpg, .png, .gif" id="digital_signature_upload" name="digital_signature_upload"><br><br>
+
+      <label for="about_yourself">Write something about yourself in brief</label>
+      <textarea id="about_yourself" name="about_yourself" placeholder="Write something..." style="height:200px"></textarea><br><br>
+      
+      <input type="submit" value="Submit" id="submission_date" name="submission_date"><br>
+      <center><p>&#169; 2024 Rising Influencer https://www.risinginfluencer.com </p></center>
+    </form>
+  </div>
+
+<!-- job form Section ends here-->
+
+
+<!-- Footer Section starts here-->
+<footer class="section footer">
+    <div class="footer-container container">
+            <div class="footer-content">
+                <a href="#" class="logo-content flex">
+                        <i class='bx bxs-florist'></i>
+                        <span class="logo-text">Rising influencer</span>
+                    </a>
+
+                    <p class="content-description">Rising Influencer is the largest AI-Powered Branded Content Platform, connecting brands to digital influencers and creators to tell powerful stories. Marketers leverage the platform to discover influencers, create buzz-worthy content, manage their campaigns, and measure results. At the core of the platform is Insights, a social listening tool with real-time audience data across Instagram, Twitter, YouTube, and Facebook.</p>
+
+                    <div class="footer-location flex">
+                        <i class='bx bx-map map-icon'></i>
+                        
+                        <div class="location-text">
+                                17, Ashok Tower, Mother Teresa Sarani, Taltala, Park Street, Kolkata, West Bengal 700016
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer-linkContent">
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="#" class="footer-link">Private Room</a></li>
+                            <li><a href="#" class="footer-link">Meeting Room</a></li>
+                            <li><a href="#" class="footer-link">Event Room</a></li>
+                            <li><a href="#" class="footer-link">Creative Studio</a></li>
+                            <li><a href="#" class="footer-link">Custom Room</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="faqs.html" class="footer-link">FAQS</a></li>
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Help Us</a></li>
+                            <li><a href="influencerform.html" class="footer-link">Influencers</a></li>
+                            <li><a href="#" class="footer-link">Design Your Camapign</a></li>
+                            <li><a href="#" class="footer-link">Case Study</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Support</h4>
+
+                            <li><a href="home.html" class="footer-link">Home</a></li>
+                            <li><a href="about.html" class="footer-link">About us</a></li>
+                            <li><a href="careers.html" class="footer-link">Careers</a></li>
+                            <li><a href="review.html" class="footer-link">Review</a></li>
+                            <li><a href="blog.html" class="footer-link">Blog</a></li>
+                            <li><a href="contactus.html" class="footer-link">Contact</a></li>
+                            <li><a href="logout.html" class="footer-link">Log Out</a></li>
+                    </ul>
+            </div>
+    </div>
+    <div class="footer-copyRight">&#169; 2024 Made in India. All rigths reserved</div>
+</footer>
+<!-- Footer Section ends here-->
+
+<!-- Scroll Up -->
+<a href="#home" class="scrollUp-btn flex">
+        <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+</a>
+
+</main>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!--gsap cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- custom JavaScript -->
+<script src="js/jobform.js"></script>
+</body>
+</html>

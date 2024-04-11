@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job form</title>
+
+    <!--website icon-->
+    <link rel="icon" type="image/png" href="images/rising logo.png">
+    
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+        
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--ionic.io-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/designcampaign.css">
+
+</head>
+<body>
+    <!-- Header starts here-->
+
+    <header class="header">
+        <nav class="nav container flex">
+                <a href="homelogin.html" class="logo-content flex">
+                    <i class='bx bxs-florist'></i>
+                   
+                    <span class="logo-text">Rising influencer.</span>
+                </a>
+
+                <div class="menu-content">
+                        <ul class="menu-list flex">
+                                <li><a href="home.html" class="nav-link">Home</a></li>
+                                <li><a href="about.html" class="nav-link">About</a></li>
+                                <li><a href="careers.html" class="nav-link active-navlink">Careers</a></li>
+                                <li><a href="review.html" class="nav-link">Review</a></li>
+                                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                                <li><a href="contactus.html" class="nav-link">Contact us</a></li>
+                                
+                                <div class="profile-dropdown">
+                                        <div onclick="toggle()" class="profile-dropdown-btn">
+                                          <div class="profile-img">
+                                            <i class="fa-solid fa-circle"></i>
+                                          </div>
+                                          
+                                          <span>Account <i class="fa-solid fa-angle-down"></i></span>
+                                         </div>
+                                
+                                        <ul class="profile-dropdown-list">
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-user"></i>Edit Profile</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-envelope"></i>Inbox</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-sliders"></i>Settings</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-circle-question"></i>Help & Support</a></li>
+                                          <hr />
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="javascript:void(0)" onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+                                        </ul>
+                                      </div>
+                            </ul>
+                            
+                        <!--login page ends here-->
+
+                        <div class="media-icons flex">
+                                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                <a href="https://in.pinterest.com/"><i class='bx bxl-pinterest-alt'></i></a>
+                                <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                                <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+
+                        </div>
+
+                        <i class='bx bx-x navClose-btn'></i>
+                    </div>
+                    
+                    <div class="contact-content flex">
+                                           
+                    </div>
+
+                    <i class='bx bx-menu navOpen-btn'></i>
+            </nav>
+           
+</header>
+<!-- Header ends here-->
+
+<!-- Home Section starts here-->
+<main>
+    <section class="home" id="home">
+            <div class="home-content">
+                    <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                            <img src="images/designyourcampaign.jpg" alt="" class="home-img">
+
+                                            <div class="home-details">
+                                                    <div class="home-text">
+                                                            <h4 class="homeSubtitle">AT RISING INFLUENCERS.</h4>
+                                                            <h2 class="homeTitle">Presentation is everything <br> Don’t rush</h2>
+                                                    </div>
+
+                                                    
+                                            </div>
+                                    </div>
+
+                                    
+                                    </div>
+                            </div>
+
+                            
+                    </div>
+            </div>
+    </section>
+<!-- Home Section ends here-->
+
+
+<!-- influencer form Section starts here-->
+
+<div class="blog-list-container">
+    <h2>FILL THE FORM PROPERLY</h2>
+            
+</div>
+
+<div class="container1">
+    
+    <form action="designsubmission.php" method="POST" enctype="multipart/form-data">
+        <label  for="title"><b><h3><center>DESIGN YOUR CAMPAIGN HERE</h3></center></b></label><br><br>
+        <label  for="title"><i>We are equal opportunity employer, dedicated to a policy of nondiscrimation in employment on any basic including race, age, sex, religion, disability, or national origin.</i></label><br><br>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name...">
+
+      <label for="brand">Brand/Company Name</label>
+      <input type="text" id="brand" name="brand" placeholder="Your brand/Company name...">
+  
+      <label for="email">Official email ID*</label>
+      <input type="text" id="email" name="email" placeholder="Your official email id...">
+
+      <label for="phoneno">Phone No*</label>
+      <input type="text" id="phoneno" name="phoneno" placeholder="Your phone no..">
+
+      <label for="objective">Objective</label>
+      <input type="text" id="objective" name="objective" placeholder="What is your objective..">
+
+      <label for="platform">Platforms</label>
+      <select id="platform" name="platform">
+        <option value=" " >--Please choose an option--</option>
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="youtube">Youtube</option>
+        <option value="telegram">Telegram</option>
+        <option value="whatsapp">Whatsapp</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="twitter">Twitter</option>
+        <option value="blogging site">Blogging Site</option>
+        <option value="mix">Mix</option>
+        
+      </select>
+
+      <label for="campaign_type">What kind of campaign? (Select one) *</label>
+      <select id="campaign_type" name="campaign_type">
+        <option value=" " >--Please choose an option--</option>
+        <option value="product">Product/Barter</option>
+        <option value="paid">Paid</option>
+        <option value="mix">Mix</option>
+        
+      </select>
+
+      <label for="influencer_type">Type of influencers? (Select one) *</label>
+      <select id="influencer_type" name="influencer_type">
+        <option value=" " >--Please choose an option--</option>
+        <option value="nano">Nano</option>
+        <option value="micro">Micro</option>
+        <option value="macro">Macro</option>
+        <option value="celebrity">Celebrity</option>
+        <option value="customized">Customized</option>
+        
+      </select>
+      
+      <label for="budget">Budget (in GBP)</label>
+      <input type="number" min=0 step=.1 id="budget" name="budget" placeholder="  ex: IND/USD"/><br/><br/>
+      
+          
+      <label for="about_yourself">Please tell us a bit about your goals, what are you hoping to achieve with Rising Influencer?* </label>
+      <textarea id="about_yourself" name="about_yourself" placeholder="Write something..." style="height:200px"></textarea><br><br>
+      
+      <input type="submit" value="Submit"><br>
+      <center><p>&#169; 2024 Rising Influencer https://www.risinginfluencer.com </p></center>
+    </form>
+  </div>
+
+<!-- influencer form Section ends here-->
+
+
+<!-- Footer Section starts here-->
+<footer class="section footer">
+    <div class="footer-container container">
+            <div class="footer-content">
+                <a href="#" class="logo-content flex">
+                        <i class='bx bxs-florist'></i>
+                        <span class="logo-text">Rising influencer</span>
+                    </a>
+
+                    <p class="content-description">Rising Influencer is the largest AI-Powered Branded Content Platform, connecting brands to digital influencers and creators to tell powerful stories. Marketers leverage the platform to discover influencers, create buzz-worthy content, manage their campaigns, and measure results. At the core of the platform is Insights, a social listening tool with real-time audience data across Instagram, Twitter, YouTube, and Facebook.</p>
+
+                    <div class="footer-location flex">
+                        <i class='bx bx-map map-icon'></i>
+                        
+                        <div class="location-text">
+                                17, Ashok Tower, Mother Teresa Sarani, Taltala, Park Street, Kolkata, West Bengal 700016
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer-linkContent">
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="#" class="footer-link">Private Room</a></li>
+                            <li><a href="#" class="footer-link">Meeting Room</a></li>
+                            <li><a href="#" class="footer-link">Event Room</a></li>
+                            <li><a href="#" class="footer-link">Creative Studio</a></li>
+                            <li><a href="#" class="footer-link">Custom Room</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="faqs.html" class="footer-link">FAQS</a></li>
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Help Us</a></li>
+                            <li><a href="influencerform.html" class="footer-link">Influencers</a></li>
+                            <li><a href="#" class="footer-link">Design Your Camapign</a></li>
+                            <li><a href="#" class="footer-link">Case Study</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Support</h4>
+
+                            <li><a href="home.html" class="footer-link">Home</a></li>
+                            <li><a href="about.html" class="footer-link">About us</a></li>
+                            <li><a href="careers.html" class="footer-link">Careers</a></li>
+                            <li><a href="review.html" class="footer-link">Review</a></li>
+                            <li><a href="blog.html" class="footer-link">Blog</a></li>
+                            <li><a href="contactus.html" class="footer-link">Contact</a></li>
+                            <li><a href="logout.html" class="footer-link">Log Out</a></li>
+                    </ul>
+            </div>
+    </div>
+    <div class="footer-copyRight">&#169; 2024 Made in India. All rigths reserved</div>
+</footer>
+<!-- Footer Section ends here-->
+
+<!-- Scroll Up -->
+<a href="#home" class="scrollUp-btn flex">
+        <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+</a>
+
+</main>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- custom JavaScript -->
+<script src="js/designcampaign.js"></script>
+</body>
+</html>

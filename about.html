@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rising Influencer Website</title>
+
+    <!--website icon-->
+    <link rel="icon" type="image/png" href="images/rising logo.png">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--ionic.io-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <!--scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/aboutstyle.css">
+
+    </head>
+
+    <body>
+        <!-- Header starts here-->
+
+    <header class="header">
+        <nav class="nav container flex">
+                <a href="homelogin.html" class="logo-content flex">
+                    <i class='bx bxs-florist'></i>
+                   
+                    <span class="logo-text">Rising influencer.</span>
+                </a>
+
+                <div class="menu-content">
+                        <ul class="menu-list flex">
+                                <li><a href="home.html" class="nav-link">Home</a></li>
+                                <li><a href="about.html" class="nav-link active-navlink">About</a></li>
+                                <li><a href="careers.html" class="nav-link ">Careers</a></li>
+                                <li><a href="review.html" class="nav-link">Review</a></li>
+                                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                                <li><a href="contactus.html" class="nav-link">Contact us</a></li>
+                                <!--login page starts here-->
+                                <div class="profile-dropdown">
+                                        <div onclick="toggle()" class="profile-dropdown-btn">
+                                          <div class="profile-img">
+                                            <i class="fa-solid fa-circle"></i>
+                                          </div>
+                                          
+                                          <span>Account <i class="fa-solid fa-angle-down"></i></span>
+                                         </div>
+                                
+                                        <ul class="profile-dropdown-list">
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-user"></i>Edit Profile</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-envelope"></i>Inbox</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-sliders"></i>Settings</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-circle-question"></i>Help & Support</a></li>
+                                          <hr />
+                                          <li class="profile-dropdown-list-item">
+                                            <!--Logout function-->
+                                            <a href="javascript:void(0)" onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+                                        </ul>
+                                      </div>
+                                    
+                                </ul>
+                                
+                            
+                            
+                        <!--login page ends here-->
+                                
+                            
+                            
+                        <div class="media-icons flex">
+                                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                <a href="https://in.pinterest.com/"><i class='bx bxl-pinterest-alt'></i></a>
+                                <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                                <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+
+                        </div>
+
+                        <i class='bx bx-x navClose-btn'></i>
+                    </div>
+                    
+                    <div class="contact-content flex">
+                                           
+                    </div>
+
+                    <i class='bx bx-menu navOpen-btn'></i>
+            </nav>
+            
+</header>
+<!-- Header ends here-->
+
+<!-- Home Section starts here-->
+
+<!--Influencer Video starts here-->
+<div id="video-container">
+        <div id="play">PLAY</div>
+
+    <video autoplay loop muted src="images/Influencer Marketing Agency.mp4"></video>    
+</div>
+<!--Influencer Video ends here--> 
+
+<!-- About Section starts here-->
+
+<section class="section about" id="home">
+    <div class="about-content container">
+            <div class="about-imageContent">
+                    <img src="images/about/digital.jpg" alt="" class="about-img">
+            </div>
+
+            <div class="about-details">
+                    <div class="about-text">
+                            <h4 class="content-subtitle"><i>About Us</i></h4>
+                            <h2 class="content-title">Create Your Personal Brand <br> In The World Of Influencers</h2>
+                            <p class="content-description">Rising Influencers, is an influencer marketing platform, creating a chain of internet creators and 
+                            consumers through scaling businesses. To curate the right influencers for the right brand to reach the audience is the prime task we lean on working towards.
+                            </p>
+
+                            <ul class="about-lists flex">
+                                    <li class="about-list">Internet</li>
+                                    <li class="about-list dot">.</li>
+                                    <li class="about-list">Creation</li>
+                                    <li class="about-list dot">.</li>
+                                    <li class="about-list">Influence</li>
+                            </ul>
+                    </div>
+
+                    <div class="about-buttons flex">
+                            <button class="button">About Us</button>
+                            <a href="#" class="about-link flex">
+                                    <span class="link-text">see more</span>
+                                    <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                            </a>
+                    </div>
+            </div>
+
+    </div>
+</section>
+<section class="section about" id="">
+    <div class="about-content container">
+            <div class="about-imageContent">
+                    <img src="images/about/s.jpg" alt="" class="about-img">
+            </div>
+
+            <div class="about-details">
+                    <div class="about-text">
+                            <h4 class="content-subtitle"><i>Our Vision</i></h4>
+                            <h2 class="content-title">We Combine Classics <br> and Modernity</h2>
+                            <p class="content-description">As Tom Fishburne, Founder and CEO of Marketoonist once said, “The Best Marketing does not feel like Marketing. Our Mission is to scale businesses effortlessly, to connect the age of digital creators, and create a home that serves
+                                all interests.<br>We believe marketing is no more old-school advertisements but hidden in the content we create. By creating the content people like to consume, we create opportunities for lifestyle people would like to adopt. Our mission is not to be the
+                                best marketers but to be the best content creators because the content is the future, and we at Budding Influencers help to shape a bright future for the brands associated.
+                                </p>
+
+                            <ul class="about-lists flex">
+                                    <li class="about-list">Talent</li>
+                                    <li class="about-list dot">.</li>
+                                    <li class="about-list">Platforms</li>
+                                    <li class="about-list dot">.</li>
+                                    <li class="about-list">campaigns</li>
+                            </ul>
+                    </div>
+
+                    <div class="about-buttons flex">
+                            <button class="button">Our Vision</button>
+                            <a href="#" class="about-link flex">
+                                    <span class="link-text">see more</span>
+                                    <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                            </a>
+                    </div>
+            </div>
+
+    </div>
+</section>
+
+<section class="section about" id="">
+    <div class="about-content container">
+            <div class="about-imageContent">
+                    <img src="images/about/about3.jpg" alt="" class="about-img">
+            </div>
+
+            <div class="about-details">
+                    <div class="about-text">
+                            <h4 class="content-subtitle"><i>Our Mission</i></h4>
+                            <h2 class="content-title">Diversity In Action: <br> Build always-on diversity into all aspects of influencer programs</h2>
+                            <p class="content-description">As said in a seminar by Michelle StinsonRoss, “To continue winning the Internet Marketing Game, your content has to be more than just brilliant. 
+                            It has to give the people consuming that content the ability to become the better version of themselves”. Our vision is to create a prosperous place for creators, brands, and
+                            consumers altogether to work and consume something all of them love. Almost to create a chain of brilliant brands, iconic influencers, and captivated consumers of the internet 
+                            to help each other grow and connect on the root level.</p>
+
+                            <ul class="about-lists flex">
+                                    <li class="about-list">Learn about</li>
+                                    <li class="about-list dot">.</li>
+                                    <li class="about-list">Community</li>
+                                    <li class="about-list dot">.</li>
+                                    <li class="about-list">Future</li>
+                            </ul>
+                    </div>
+
+                    <div class="about-buttons flex">
+                            <button class="button">Know More</button>
+                            <a href="#" class="about-link flex">
+                                    <span class="link-text">see more</span>
+                                    <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                            </a>
+                    </div>
+            </div>
+
+    </div>
+</section>
+<!-- About Section ends here-->
+
+<!-- Footer Section starts here-->
+<footer class="section footer">
+    <div class="footer-container container">
+            <div class="footer-content">
+                <a href="#" class="logo-content flex">
+                        <i class='bx bxs-florist'></i>
+                        <span class="logo-text">Rising influencer</span>
+                    </a>
+
+                    <p class="content-description">Rising Influencer is the largest AI-Powered Branded Content Platform, connecting brands to digital influencers and creators to tell powerful stories. Marketers leverage the platform to discover influencers, create buzz-worthy content, manage their campaigns, and measure results. At the core of the platform is Insights, a social listening tool with real-time audience data across Instagram, Twitter, YouTube, and Facebook.</p>
+
+                    <div class="footer-location flex">
+                        <i class='bx bx-map map-icon'></i>
+                        
+                        <div class="location-text">
+                                17, Ashok Tower, Mother Teresa Sarani, Taltala, Park Street, Kolkata, West Bengal 700016
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer-linkContent">
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="#" class="footer-link">Private Room</a></li>
+                            <li><a href="#" class="footer-link">Meeting Room</a></li>
+                            <li><a href="#" class="footer-link">Event Room</a></li>
+                            <li><a href="#" class="footer-link">Creative Studio</a></li>
+                            <li><a href="#" class="footer-link">Custom Room</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="faqs.html" class="footer-link">FAQS</a></li>
+                            <li><a target="_blank" href="images/privacy-policy.pdf" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="contactus.html" class="footer-link">Help Us</a></li>
+                            <li><a href="influencerform.html" class="footer-link">Influencers</a></li>
+                            <li><a href="designcampaign.html" class="footer-link">Design Your Camapign</a></li>
+                            <li><a target="_blank" href="images/Rising Influencer.pdf" class="footer-link">Case Study</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Support</h4>
+
+                            <li><a href="home.html" class="footer-link">Home</a></li>
+                            <li><a href="about.html" class="footer-link">About us</a></li>
+                            <li><a href="careers.html" class="footer-link">Careers</a></li>
+                            <li><a href="review.html" class="footer-link">Review</a></li>
+                            <li><a href="blog.html" class="footer-link">Blog</a></li>
+                            <li><a href="contactus.html" class="footer-link">Contact</a></li>
+                            <li><a href="logout.html" class="footer-link">Log Out</a></li>
+                    </ul>
+            </div>
+    </div>
+    <div class="footer-copyRight">&#169; 2024 Made in India. All rigths reserved</div>
+</footer>
+<!-- Footer Section ends here-->
+
+<!-- Scroll Up -->
+<a href="#home" class="scrollUp-btn flex">
+        <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+</a>
+</main>
+
+<!--gsap cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- custom JavaScript -->
+<script src="js/about.js"></script>
+
+    </body>
+</html>

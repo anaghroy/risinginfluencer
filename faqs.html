@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs page</title>
+    
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+        
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--ionic.io-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/faqsstyle.css">
+
+</head>
+<body>
+<!-- Header starts here-->
+
+<header class="header">
+    <nav class="nav container flex">
+            <a href="homelogin.html" class="logo-content flex">
+                <i class='bx bxs-florist'></i>
+               
+                <span class="logo-text">Rising influencer.</span>
+            </a>
+
+            <div class="menu-content">
+                    <ul class="menu-list flex">
+                            <li><a href="home.html" class="nav-link">Home</a></li>
+                            <li><a href="about.html" class="nav-link">About</a></li>
+                            <li><a href="careers.html" class="nav-link">Careers</a></li>
+                            <li><a href="#" class="nav-link">Review</a></li>
+                            <li><a href="blog.html" class="nav-link">Blog</a></li>
+                            <li><a href="#" class="nav-link">Contact us</a></li>
+                            <div class="profile-dropdown">
+                                <div onclick="toggle()" class="profile-dropdown-btn">
+                                  <div class="profile-img">
+                                    <i class="fa-solid fa-circle"></i>
+                                  </div>
+                                  
+                                  <span>Account <i class="fa-solid fa-angle-down"></i></span>
+                                 </div>
+                        
+                                <ul class="profile-dropdown-list">
+                                  <li class="profile-dropdown-list-item">
+                                    <a href="#"><i class="fa-regular fa-user"></i>Edit Profile</a></li>
+                        
+                                  <li class="profile-dropdown-list-item">
+                                    <a href="#"><i class="fa-regular fa-envelope"></i>Inbox</a></li>
+                        
+                                  <li class="profile-dropdown-list-item">
+                                    <a href="#"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                        
+                                  <li class="profile-dropdown-list-item">
+                                    <a href="#"><i class="fa-solid fa-sliders"></i>Settings</a></li>
+                        
+                                  <li class="profile-dropdown-list-item">
+                                    <a href="#"><i class="fa-regular fa-circle-question"></i>Help & Support</a></li>
+                                  <hr />
+                                  <li class="profile-dropdown-list-item">
+                                    <!--Logout function-->
+                                    <a href="javascript:void(0)" onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+                                </ul>
+                              </div>
+                            
+                        </ul>
+                            
+                        </ul>
+                        
+                    <!--login page ends here-->
+
+                    <div class="media-icons flex">
+                            <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                            <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                            <a href="https://in.pinterest.com/"><i class='bx bxl-pinterest-alt'></i></a>
+                            <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                            <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+
+                    </div>
+
+                    <i class='bx bx-x navClose-btn'></i>
+                </div>
+                
+                <div class="contact-content flex">
+                                       
+                </div>
+
+                <i class='bx bx-menu navOpen-btn'></i>
+        </nav>
+        
+</header>
+<!-- Header ends here-->
+<!-- Home Section starts here-->
+<main>
+    <section class="home" id="home">
+            <div class="home-content">
+                    <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                            <img src="images/faqs.jpg" alt="" class="home-img">
+
+                                            <div class="home-details">
+                                                    <div class="home-text">
+                                                            <h4 class="homeSubtitle">DE-MYSTIFYING</h4>
+                                                            <h2 class="homeTitle">Frequently Asked Questions <br> About "Influencer Marketing"</h2>
+                                                    </div>
+
+                                                    <button class="button">Explore</button>
+                                            </div>
+                                    </div>
+
+                                    
+                                    </div>
+                            </div>
+
+                            
+                    </div>
+            </div>
+    </section>
+<!-- Home Section ends here-->
+
+
+
+<!--FAQs starts here-->
+
+    
+<!--FAQs page starts here-->
+    <div class="faq">
+        <div class="faq-name">
+            <h1 class="faq-header">Have <br> any questions?</h1>
+            <img class="faq-img" src="images/faqs1.webp">
+        </div>
+        <div class="faq-box">
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-1">
+                <label class="faq-title" for="faq-trigger-1">How Do I Get Collaboration Opportunities?</label>
+            <div class="faq-detail">
+                <p>All you need to do is fill the influencers’ form on the website, we will get your registration and when we have an appropriate campaign for you, we will get back to you with exciting deals!</p>
+            </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-2">
+                <label class="faq-title" for="faq-trigger-2">How Do I Apply For Campaigns?</label>
+            <div class="faq-detail">
+                <p>You can apply for campaigns by filling out the influencers’ form.<br>
+                    To fill the form –<br>
+                    Go to Influencers Page<br>
+                    Click on "Apply Now" Button<br>
+                    Fill up all fields and submit.<br>
+                    Click on Join Our Fleet
+                    Fill out the form.
+                    You are Registered.</p>
+            </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-3">
+                <label class="faq-title" for="faq-trigger-3">I Have Registered But Didn't Get Any Response/ Applied For A Campaign But Didn't Get Selected?</label>
+            <div class="faq-detail">
+                <p>We have registered you once you have filled the form. Now when we have brands similar to your content type, we will shortlist you and if you get selected, the team will contact you for more details. We make sure to connect the right brands with the right influencers. Your patience is appreciated!</p>
+            </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-4">
+                <label class="faq-title" for="faq-trigger-4">What After I Get Selected For The Campaign?</label>
+            <div class="faq-detail">
+                <p>After you are selected for the campaign, our campaign managers will coordinate with you and take it forward. You will get the necessary information about the brand you are working with and all the details you need to know to be a part of the campaign will be conveyed clearly to you by our campaign managers.</p>
+            </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-5">
+                <label class="faq-title" for="faq-trigger-5">How Do I Register With Your Platform</label>
+            <div class="faq-detail">
+                <p>You can register with our platform by filling out the influencers’ form. To fill the form –<br>Click On The “Login” Tab 
+                    Go to Influencers Page<br>
+                    Click on Join Our Fleet<br>
+                    Fill out the form.
+                    You are Registered.</p>
+            </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-6">
+                <label class="faq-title" for="faq-trigger-6">How to find proper influencers?</label>
+            <div class="faq-detail">
+                <p>There are certain tricks to find proper influencers for your business. Not all influencers are not as effective as you might think. The general rule is going with those influencers that share the same interest with your business. For example, a beauty blogger can promote a beauty product better than a food product; similarly a food blogger can promote a food product better than a beauty blogger. So, choose those who share a similar interest, then only you can fulfill your branding requirement.</p>
+            </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-7">
+                <label class="faq-title" for="faq-trigger-7">Is it an affordable option?</label>
+            <div class="faq-detail">
+                <p>Yes, it is affordable compared to traditional marketing. Besides, you can leverage the power of various social media platforms to increase your sales. You can get a complete break up of your investment.</p>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+<!--FAQs page ends here-->
+
+<!-- Footer Section starts here-->
+<footer class="section footer">
+    <div class="footer-container container">
+            <div class="footer-content">
+                <a href="#" class="logo-content flex">
+                        <i class='bx bxs-florist'></i>
+                        <span class="logo-text">Rising influencer</span>
+                    </a>
+
+                    <p class="content-description">Rising Influencer is the largest AI-Powered Branded Content Platform, connecting brands to digital influencers and creators to tell powerful stories. Marketers leverage the platform to discover influencers, create buzz-worthy content, manage their campaigns, and measure results. At the core of the platform is Insights, a social listening tool with real-time audience data across Instagram, Twitter, YouTube, and Facebook.</p>
+
+                    <div class="footer-location flex">
+                        <i class='bx bx-map map-icon'></i>
+                        
+                        <div class="location-text">
+                                17, Ashok Tower, Mother Teresa Sarani, Taltala, Park Street, Kolkata, West Bengal 700016
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer-linkContent">
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="#" class="footer-link">Private Room</a></li>
+                            <li><a href="#" class="footer-link">Meeting Room</a></li>
+                            <li><a href="#" class="footer-link">Event Room</a></li>
+                            <li><a href="#" class="footer-link">Creative Studio</a></li>
+                            <li><a href="#" class="footer-link">Custom Room</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="faqs.html" class="footer-link">FAQS</a></li>
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Help Us</a></li>
+                            <li><a href="influencerform.html" class="footer-link">Influencers</a></li>
+                            <li><a href="designcampaign.html" class="footer-link">Design Your Camapign</a></li>
+                            <li><a href="#" class="footer-link">Case Study</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Support</h4>
+
+                            <li><a href="home.html" class="footer-link">Home</a></li>
+                            <li><a href="about.html" class="footer-link">About us</a></li>
+                            <li><a href="careers.html" class="footer-link">Careers</a></li>
+                            <li><a href="review.html" class="footer-link">Review</a></li>
+                            <li><a href="blog.html" class="footer-link">Blog</a></li>
+                            <li><a href="contactus.html" class="footer-link">Contact</a></li>
+                            <li><a href="logout.html" class="footer-link">Log Out</a></li>
+                    </ul>
+            </div>
+    </div>
+    <div class="footer-copyRight">&#169; 2024 Made in India. All rigths reserved</div>
+</footer>
+<!-- Footer Section ends here-->
+
+<!-- Scroll Up -->
+<a href="#home" class="scrollUp-btn flex">
+        <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+</a>
+
+</main>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!--gsap cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- custom JavaScript -->
+<script src="js/faqs.js"></script>
+</body>
+</html>
