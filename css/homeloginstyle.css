@@ -1,3 +1,5 @@
+
+        
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -6,19 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/*Font sizes For Small Screen 968px */
-@media screen and (max-width: 990px) {
-:root {
-  --big-font: 3.5rem;
-  --h1-font: 2.4rem;
-  --h2-font: 2rem;
-  --h3-font: 1.8rem;
-  --h4-font: 1.6rem;
-  --normal-font: 1.5rem;
-  --small-font: 1.3rem;
-  --smaller-font: 1.2rem;
-}
-}
+
 
 
 /* Pre-CSS */
@@ -153,8 +143,7 @@ img{
 }
 .logo-icon,
 .logo-text,
-.nav-link,
-.phone-icon{
+.nav-link{
   color:  #FFF;
 }
 
@@ -267,185 +256,137 @@ img{
 /* nav responsive ends here*/
 
 /* navbar login button starts here*/
-.menu-content .btnLogin-popup{
-  width: 100px;
-  height: 40px;
-  outline: none;
-  border: none;
-  border-radius: 3rem;
-  cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: 600;
-  transition: .5s;
+
+.navbar-list {
+    width: 100%;
+    text-align: right;
+    padding-right: 2rem;
+  }
   
-}
-.menu-content .btnLogin-popup:hover{
-  background-color: #C87E4F;
-  color: #FFF;
-}
+  .navbar-list li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  
+  .navbar-list li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .profile-dropdown {
+    position: relative;
+    width: fit-content;
+  }
+  
+  .profile-dropdown-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 160px;
+    border-radius: 50px;
+    color: #0b0b0b;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #227c70;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
+      border 0.3s;
+  }
+  
+  .profile-dropdown-btn:hover {
+    background-color: #CF916A;
+    box-shadow: 0px 2px 8px 0px;
+  }
+  
+  .profile-img {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: url("../images/profile-pic.jpg");
+    background-size: cover;
+  }
+  
+  .profile-img i {
+    position: absolute;
+    right: 0;
+    bottom: 0.3rem;
+    font-size: 0.5rem;
+    color: #82cd47;
+  }
+  
+  .profile-dropdown-btn span {
+    margin: 0 0.5rem;
+    margin-right: 2;
+    color: #0b0b0b;
+    font-size: 18px;
+  }
+  
+  .profile-dropdown-list {
+    position: absolute;
+    top: 68px;
+    width: 220px;
+    right: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px;
+    transition: max-height 0.5s;
+  }
+  
+  .profile-dropdown-list hr {
+    border: 0.5px solid #82cd47;
+  }
+  
+  .profile-dropdown-list.active {
+    max-height: 500px;
+  }
+  
+  .profile-dropdown-list-item {
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    transition: background-color 0.2s ease-in, padding-left 0.2s;
+  }
+  
+  .profile-dropdown-list-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #393e46;
+  }
+  
+  .profile-dropdown-list-item a i {
+    margin-right: 0.8rem;
+    font-size: 1.1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: #227c70;
+    color: #fff;
+    line-height: 2.3rem;
+    text-align: center;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: margin-right 0.3s;
+  }
+  
+  .profile-dropdown-list-item:hover {
+    padding-left: 1.5rem;
+    background-color: rgba(34, 124, 112, 0.2);
+  }
 /* navbar login button ends here*/
-
-/* login page starts here*/
-.wrapper{
-  position: relative;
-  width: 400px;
-  height: 440px;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, .5);
-  border-radius: 20px;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transform: scale(0);
-  transition: transform .5s ease, height .2s ease;
-}
-
-.wrapper.active-popup{
-  transform: scale(1);
-}
-
-.wrapper.active{
-  height: 520px;
-}
-.wrapper .form-box{
-  width: 100%;
-  padding: 40px;
-}
-.wrapper .form-box.login{
-  transition: transform .18s ease;
-  transform: translateX(0);
-}
-.wrapper.active .form-box.login{
-  transition: none;
-  transform: translateX(-400px);
-}
-.wrapper .form-box.register{
-  position: absolute;
-  transition: none;
-  transform: translateX(400px);
-}
-.wrapper.active .form-box.register{
-  transition: transform .18s ease;
-  transform: translateX(0);
-}
-.wrapper .icon-close{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45px;
-  height: 45px;
-  background: #C87E4F;
-  font-size: 2em;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom-left-radius: 20px;
-  cursor: pointer;
-  z-index: 1;
-
-}
-.form-box h2{
-  font-size: 2em;
-  color: #C87E4F;
-  text-align: center;
-}
-.input-box{
-  position: relative;
-  width: 100%;
-  height: 50px;
-  border-bottom: 2px solid #C87E4F;
-  margin: 30px 0;
-}
-.input-box label{
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  transform: translateY(-50%);
-  font-size: 1em;
-  color: #C87E4F;
-  font-weight: 500;
-  pointer-events: none;
-  transition: .5s;
-}
-.input-box input:focus~label,
-.input-box input:valid~label{
-  top: -5px;
-}
-.input-box input{
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 1em;
-  color: #f4f7f9;
-  font-weight: 600;
-  padding: 0 35px 0 5px;
-}
-.input-box .icon{
-  position: absolute;
-  right: 8px;
-  font-size: 1.2em;
-  color: #C87E4F;
-  line-height: 57px;
-}
-.remember-forgot{
-  font-size: .9em;
-  color: #C87E4F;
-  font-weight: 500;
-  margin:  -15px 0 15px;
-  display: flex;
-  justify-content: space-between;
-}
-.remember-forgot label input{
-  accent-color: #fff;
-  margin-right: 3px;
-}
-.remember-forgot a{
-  color: #C87E4F;
-  text-decoration: none;
-}
-.remember-forgot a:hover{
-  text-decoration: underline;
-}
-.btn{
-  width: 100%;
-  height: 100%;
-  background: #C87E4F;
-  border: none;
-  outline: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-  color: #fff;
-  font-weight: 500;
-
-}
-.login-register{
-  font-size: .9em;
-  color: #C87E4F;
-  text-align: center;
-  font-weight: 500;
-  margin: 25px 0 10px;
-}
-.login-register p a{
-  color: #C87E4F;
-  text-decoration: none;
-  font-weight: 600;
-}
-.login-register p a:hover{
-  text-decoration: underline;
-}
-/* login page ends here*/
 
 /* Home starts here*/
 .home{
   height: 100vh;
   width: 100%;
+  
+  
 }
 .swiper-slide{
   position: relative;
@@ -573,6 +514,8 @@ img{
     height: calc(.5625 * 80vw);
   }
   
+  
+
 /*Video cursor ends here*/
 
 /* About starts here*/
@@ -746,88 +689,6 @@ img{
 }
 /* Brand ends here*/
 
-/*Animation Counter starts here*/
-.backbody{
-  background-color: #edf2f4;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-top: 50px;
-  margin-bottom: 40px;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 20px 20px 5px #8d99ae;
-    
-}
-.font h1{
-       font-size: 50px;
-       font-weight: 700;
-       justify-content: center;
-       text-align: center;
-       margin-top: 20px;
-       color: #3d405b;
-}
-.row{
-       text-align: center;
-       display: flex;
-       align-items: center;
-       justify-content: space-around;
-       font-weight: 600;
-       font-size: 20px;
-       margin-top: 20px;
-       
-}
-.col-sm .text-light {
-       font-size: 20px;
-}
-.row .col-sm1{
-       width: 250px;
-       height: 100px;
-       padding: 10px;
-       background-color: #f4f1de;
-       color: black;
-       border-radius: 30px;
-       margin-left: 10px;
-       box-shadow: 0 5px 9px 0 gray, 0 4px 10px 0 whitesmoke;
-       margin-bottom: 10px;
-       float: right;
-}
-.row .col-sm2{
-       width: 250px;
-       height: 100px;
-       padding: 10px;
-       background-color: #f4f1de;
-       color: black;
-       border-radius: 30px;
-       margin-left: 10px;
-       box-shadow: 0 5px 9px 0 gray, 0 4px 10px 0 whitesmoke;
-       float: right;
-}
-.row .col-sm3{
-       width: 250px;
-       height: 100px;
-       padding: 10px;
-       background-color: #f4f1de;
-       color: black;
-       border-radius: 30px;
-       margin-left: 10px;
-       box-shadow: 0 5px 9px 0 gray, 0 6px 10px 0 whitesmoke;
-       float: right;
-}
-.row .col-sm4{
-       width: 250px;
-       height: 100px;
-       padding: 10px;
-       background-color: #f4f1de;
-       color: black;
-       border-radius: 30px;
-       margin-left: 10px;
-       box-shadow: 0 5px 9px 0 gray, 0 6px 10px 0 whitesmoke;
-       float: right;
-}
-.row p{
-       color: #f77f00;
-}
-/*Animation Counter ends here*/
 
 /* Review starts here*/
 .review{
@@ -1179,4 +1040,6 @@ img{
   }
 }
 /* Responive media ends here*/
+
+
 
