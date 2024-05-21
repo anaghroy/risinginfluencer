@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rising Influencer Website</title>
+
+    <!--website icon-->
+    <link rel="icon" type="image/png" href="images/rising logo.png">
+    
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+        
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--ionic.io-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/blogsstyle.css">
+
+</head>
+<body>
+<!-- Header starts here-->
+
+    <header class="header">
+            <nav class="nav container flex">
+                    <a href="homelogin.html" class="logo-content flex">
+                        <i class='bx bxs-florist'></i>
+                       
+                        <span class="logo-text">Rising influencer.</span>
+                    </a>
+
+                    <div class="menu-content">
+                            <ul class="menu-list flex">
+                                    <li><a href="homelogin.html" class="nav-link">Home</a></li>
+                                    <li><a href="about.html" class="nav-link">About</a></li>
+                                    <li><a href="careers.html" class="nav-link ">Careers</a></li>
+                                    <li><a href="review.html" class="nav-link">Review</a></li>
+                                    <li><a href="blog.html" class="nav-link active-navlink">Blog</a></li>
+                                    <li><a href="contactus.html" class="nav-link">Contact us</a></li>
+                                    <div class="profile-dropdown">
+                                        <div onclick="toggle()" class="profile-dropdown-btn">
+                                          <div class="profile-img">
+                                            <i class="fa-solid fa-circle"></i>
+                                          </div>
+                                          
+                                          <span>Account <i class="fa-solid fa-angle-down"></i></span>
+                                         </div>
+                                
+                                        <ul class="profile-dropdown-list">
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-user"></i>Edit Profile</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-envelope"></i>Inbox</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-sliders"></i>Settings</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-circle-question"></i>Help & Support</a></li>
+                                          <hr />
+                                          <li class="profile-dropdown-list-item">
+                                            <!--Logout function-->
+                                            <a href="javascript:void(0)" onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+                                        </ul>
+                                      </div>
+                                    
+                                </ul>
+                         
+                                
+                                
+                            <!--login page ends here-->
+
+                            <div class="media-icons flex">
+                                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                    <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                    <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                    <a href="https://in.pinterest.com/"><i class='bx bxl-pinterest-alt'></i></a>
+                                    <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+
+                            </div>
+
+                            <i class='bx bx-x navClose-btn'></i>
+                        </div>
+                        
+                        <div class="contact-content flex">
+                                               
+                        </div>
+
+                        <i class='bx bx-menu navOpen-btn'></i>
+                </nav>
+                
+                  
+        <!--login page ends here-->
+    </header>
+<!-- Header ends here-->
+
+<!-- Home Section starts here-->
+    <main>
+        <section class="home" id="home">
+                <div class="home-content">
+                        <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                                <img src="images/blog/blog1.jpg" alt="" class="home-img">
+
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle">Content is KING.</h4>
+                                                                <h2 class="homeTitle">But distribution is <br> QUEEN</h2>
+                                                        </div>
+
+                                                        <button class="button">Explore</button>
+                                                </div>
+                                        </div>
+
+                                        
+                                        </div>
+                                </div>
+
+                                
+                        </div>
+                </div>
+        </section>
+<!-- Home Section ends here-->
+
+<!-- blog Section starts here-->
+<section id="blog-container">
+    <div class="blogs">
+        <div class="post">
+            <img src="images/blog/blogging1.jpg" alt="">
+            <h3>INFLUENCER MARKETING GUIDE: HOW TO WORK WITH INFLUENCERS</h3>
+            <p>To pull off a great influencer marketing campaign you need to work with experienced social media influencers who share your brand values.<br><br>
+                <b>Christina Newberry, Eileen Kwok</b><br> <br>October 25, 2023</p>
+            <button class="know-btn">Read more</button>
+            
+        </div>
+        <div class="post">
+            <img src="images/blog/blogging2.jpg" alt="">
+            <h3>INTERNET INFLUENCERS AND WHY THEY PROMOTE FAST FASHION</h3>
+            <p>Influencers play a significant role in promoting fast fashion to their followers.
+                They create a sense of urgency, offer promotions, and showcase the clothes in a relatable way.</p>
+                <P>  <br><b>Aditi Adak , Kolkata</b><br> <br>October 29 , 2023</p>
+            <button class="know-btn">Read more</button>
+        </div>
+        <div class="post">
+            <img src="images/blog/blogging3.jpg" alt="">
+            <h3>INFLUENCER MARKETING GUIDE: HOW TO GET STARTED</h3>
+            <p>Influencer marketing, also known as branded content or working with creators, is a surefire way to expand the reach of your brand on social media. <br><br><b>Nadeem Siddiqui, Mumbai</b><br> November 09, 2023</p>
+            <button class="know-btn">Read more</button>
+        </div>
+        <div class="post">
+            <img src="images/blog/blogging4.jpg" alt="">
+            <h3>Influencer Marketing Guide: How to Work With Influencers</h3>
+            <p>Influencer marketing, also known as branded content or working with creators, is a surefire way to expand the reach of your brand on social media. <br><br><b>Nadeem Siddiqui, Mumbai</b><br> November 09, 2023</p>
+            <button class="know-btn">Read more</button>
+        </div>
+        <div class="post">
+            <img src="images/blog/blogging6.jpg" alt="">
+            <h3>Influencer Marketing Guide: How to Work With Influencers</h3>
+            <p>Influencer marketing, also known as branded content or working with creators, is a surefire way to expand the reach of your brand on social media. <br><br><b>Nadeem Siddiqui, Mumbai</b><br> November 17, 2023</p>
+            <button class="know-btn">Read more</button>
+        </div>
+        <div class="post">
+            <img src="images/blog/blogging7.jpg" alt="">
+            <h3>Influencer Marketing Guide: How to Work With Influencers</h3>
+            <p>Influencer marketing, also known as branded content or working with creators, is a surefire way to expand the reach of your brand on social media. <br><br><b>Nadeem Siddiqui, Mumbai</b><br> November 10, 2023</p>
+            <button class="know-btn">Read more</button>
+        </div>
+    </div>
+    <div class="cate">
+        <h2>Categories</h2>
+        <hr>
+        <a href="#">INFLUENCERS MARKETING GUIDE</a>
+        <hr>
+        <a href="#">WHY THEY PROMOTE FAST FASHION</a>
+        <hr>
+        <a href="#">INTERNET INFLUENCERS</a>
+        <hr>
+        <a href="#">HOW TO WORK WITH INFLUENCERS</a>
+        <hr>
+    </div>
+    
+</section>
+<!-- blog Section ends here-->
+
+<div class="blog-list-container">
+        <h2>WRITE YOUR OWN BLOG</h2>
+                
+    </div>
+<div class="blog-text">
+        <h1 class="section-subtitle"></h1>
+        <div class="contact-form">
+        <p class="section-description">If you have any questions or need help with something specific, please feel free to contact us.</p>
+        <p class="section-description">If you have a story to tell, we want to hear it! Whether you're an influencer, brand owner or just someone who loves fashion and style.
+        <p class="section-description">If you have any questions or need help with something specific, please contact us.</p>
+        </div>
+</div>
+
+        
+        
+       
+</div>
+<div class="container1">
+    <form action="action_page.php" method="POST" enctype="multipart/form-data">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="Your name...">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Your last name...">
+        
+          <label for="email">Email ID</label>
+          <input type="text" id="email" name="email" placeholder="Your email id...">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+
+<!-- Footer Section starts here-->
+<footer class="section footer">
+    <div class="footer-container container">
+            <div class="footer-content">
+                <a href="#" class="logo-content flex">
+                        <i class='bx bxs-florist'></i>
+                        <span class="logo-text">Rising influencer</span>
+                    </a>
+
+                    <p class="content-description">Rising Influencer is the largest AI-Powered Branded Content Platform, connecting brands to digital influencers and creators to tell powerful stories. Marketers leverage the platform to discover influencers, create buzz-worthy content, manage their campaigns, and measure results. At the core of the platform is Insights, a social listening tool with real-time audience data across Instagram, Twitter, YouTube, and Facebook.</p>
+
+                    <div class="footer-location flex">
+                        <i class='bx bx-map map-icon'></i>
+                        
+                        <div class="location-text">
+                                17, Ashok Tower, Mother Teresa Sarani, Taltala, Park Street, Kolkata, West Bengal 700016
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer-linkContent">
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="#" class="footer-link">Private Room</a></li>
+                            <li><a href="#" class="footer-link">Meeting Room</a></li>
+                            <li><a href="#" class="footer-link">Event Room</a></li>
+                            <li><a href="#" class="footer-link">Creative Studio</a></li>
+                            <li><a href="#" class="footer-link">Custom Room</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Facility</h4>
+
+                            <li><a href="faqs.html" class="footer-link">FAQS</a></li>
+                            <li><a target="_blank" href="images/privacy-policy.pdf" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="service.html" class="footer-link">Our service</a></li>
+                            <li><a href="influencerform.html" class="footer-link">Influencers</a></li>
+                            <li><a href="designcampaign.html" class="footer-link">Design Your Camapign</a></li>
+                            <li><a target="_blank"href="images/Rising Influencer.pdf" class="footer-link">Case Study</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                            <h4 class="footerLinks-title">Support</h4>
+
+                            <li><a href="homelogin.html" class="footer-link">Home</a></li>
+                            <li><a href="about.html" class="footer-link">About us</a></li>
+                            <li><a href="careers.html" class="footer-link">Careers</a></li>
+                            <li><a href="review.html" class="footer-link">Review</a></li>
+                            <li><a href="blog.html" class="footer-link">Blog</a></li>
+                            <li><a href="contactus.html" class="footer-link">Contact</a></li>
+                            <li><a href="logout.html" class="footer-link">Log Out</a></li>
+                    </ul>
+            </div>
+    </div>
+    <div class="footer-copyRight">&#169; 2024 Made in India. All rigths reserved</div>
+</footer>
+<!-- Footer Section ends here-->
+
+<!-- Scroll Up -->
+<a href="#home" class="scrollUp-btn flex">
+        <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+</a>
+
+</main>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!--gsap cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- custom JavaScript -->
+<script src="js/careerscript.js"></script>
+</body>
+</html>

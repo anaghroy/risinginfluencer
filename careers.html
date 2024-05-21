@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rising Influencer Website</title>
+    <!--website icon-->
+    <link rel="icon" type="image/png" href="images/rising logo.png">
+    
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+        
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--ionic.io-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/careersstyle.css">
+
+</head>
+<body>
+<!-- Header starts here-->
+
+    <header class="header">
+            <nav class="nav container flex">
+                    <a href="homelogin.html" class="logo-content flex">
+                        <i class='bx bxs-florist'></i>
+                       
+                        <span class="logo-text">Rising influencer.</span>
+                    </a>
+
+                    <div class="menu-content">
+                            <ul class="menu-list flex">
+                                    <li><a href="homelogin.html" class="nav-link">Home</a></li>
+                                    <li><a href="about.html" class="nav-link">About</a></li>
+                                    <li><a href="careers.html" class="nav-link active-navlink">Careers</a></li>
+                                    <li><a href="review.html" class="nav-link">Review</a></li>
+                                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                                    <li><a href="contactus.html" class="nav-link">Contact us</a></li>
+                                    <div class="profile-dropdown">
+                                        <div onclick="toggle()" class="profile-dropdown-btn">
+                                          <div class="profile-img">
+                                            <i class="fa-solid fa-circle"></i>
+                                          </div>
+                                          
+                                          <span>Account <i class="fa-solid fa-angle-down"></i></span>
+                                         </div>
+                                
+                                        <ul class="profile-dropdown-list">
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-user"></i>Edit Profile</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-envelope"></i>Inbox</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-solid fa-sliders"></i>Settings</a></li>
+                                
+                                          <li class="profile-dropdown-list-item">
+                                            <a href="#"><i class="fa-regular fa-circle-question"></i>Help & Support</a></li>
+                                          <hr />
+                                          <li class="profile-dropdown-list-item">
+                                            <!--Logout function-->
+                                            <a href="javascript:void(0)" onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+                                        </ul>
+                                      </div>
+                                    
+                                </ul>
+                        
+                                
+                            <!--login page ends here-->
+
+                            <div class="media-icons flex">
+                                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                    <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                    <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                    <a href="https://in.pinterest.com/"><i class='bx bxl-pinterest-alt'></i></a>
+                                    <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                                    <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+
+                            </div>
+
+                            <i class='bx bx-x navClose-btn'></i>
+                        </div>
+                        
+                        <div class="contact-content flex">
+                                               
+                        </div>
+
+                        <i class='bx bx-menu navOpen-btn'></i>
+                </nav>
+                
+                
+        
+    </header>
+<!-- Header ends here-->
+
+<!-- Home Section starts here-->
+    <main>
+        <section class="home" id="home">
+                <div class="home-content">
+                        <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                                <img src="images/careers/JOB1.gif" alt="" class="home-img">
+
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle">AT RISING INFLUENCERS.</h4>
+                                                                <h2 class="homeTitle">We grow through our team's <br> growth and create a culture that is safe,<br> experimental and innovative all at once.</h2>
+                                                        </div>
+
+                                                        <button class="button">Explore</button>
+                                                </div>
+                                        </div>
+
+                                        
+                                        </div>
+                                </div>
+
+                                
+                        </div>
+                </div>
+        </section>
+<!-- Home Section ends here-->
+
+<!--careers starts here-->
+<div class="jobs-list-container">
+        <h2>JOB OPPORTUNITIES</h2>
+  
+        <input class="job-search" type="text" placeholder="Search here..." />
+  
+        <div class="jobs"></div>
+      </div>
+<!--careers ends here-->
+<!-- Blog Section starts here-->
+<section class="section review" id="blog">
+        <div class="review-container container">
+                <div class="review-text">
+                        <h4 class="section-subtitle"><i> AN INDUSTRY LEADER
+                        </i></h4>
+                        <h2 class="section-title">Rising Influencer is recognized as the
+                                #1 Enterprise Leader in Influencer Marketing</h2>
+                        <p class="section-description">Ranked #1 by both customers and validated by industry peers, rising influencer is the #1 ranked enterprise leader in G2,
+                                rated 5 stars in Influencer Marketing Hub, a leader in Forrester, and recognized as the first platform with API-integrated data with
+                                TikTok, Facebook, Instagram, Twitter, and YouTube.</p>
+                </div>
+
+                <div class="tesitmonial swiper mySwiper">
+                        <div class="swiper-wrapper">
+                                <div class="testi-content swiper-slide flex">
+                                        <img src="images/profileImg2.jpg" alt="" class="review-img">
+                                        <p class="review-quote">Your product hits the spot every time. Thank you for the experience of pure, rising influencer is a great one-stop-shop for all things influencer related!! I will never purchase any other and I will spread the word!</p>
+                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                        <div class="testi-personDetails flex">
+                                                <span class="name">Marnie Rotter</span>
+                                                <span class="job">Sales Representative</span>
+                                        </div>
+                                </div>
+                                <div class="testi-content swiper-slide flex">
+                                        <img src="images/profileImg1.jpg" alt="" class="review-img">
+                                        <p class="review-quote">Your product hits the spot every time. Thank you for the experience of pure, rising influencer is a great one-stop-shop for all things influencer related!! I will never purchase any other and I will spread the word!</p>
+                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                        <div class="testi-personDetails flex">
+                                                <span class="name">Marnie Rotter</span>
+                                                <span class="job">Marketing Manager</span>
+                                        </div>
+                                </div>
+                                <div class="testi-content swiper-slide flex">
+                                        <img src="images/profileImg3.jpg" alt="" class="review-img">
+                                        <p class="review-quote">Your product hits the spot every time. Thank you for the experience of pure, rising influencer is a great one-stop-shop for all things influencer related!! I will never purchase any other and I will spread the word!</p>
+                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                        <div class="testi-personDetails flex">
+                                                <span class="name">Marnie Rotter</span>
+                                                <span class="job">Product Manager</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-navBtn"></div>
+                            <div class="swiper-button-prev swiper-navBtn"></div>
+                            <div class="swiper-pagination"></div>
+                </div>
+        </div>
+    </section>
+<!-- Blog Section ends here -->
+
+
+<!-- Footer Section starts here-->
+<footer class="section footer">
+        <div class="footer-container container">
+                <div class="footer-content">
+                    <a href="#" class="logo-content flex">
+                            <i class='bx bxs-florist'></i>
+                            <span class="logo-text">Rising influencer</span>
+                        </a>
+
+                        <p class="content-description">Rising Influencer is the largest AI-Powered Branded Content Platform, connecting brands to digital influencers and creators to tell powerful stories. Marketers leverage the platform to discover influencers, create buzz-worthy content, manage their campaigns, and measure results. At the core of the platform is Insights, a social listening tool with real-time audience data across Instagram, Twitter, YouTube, and Facebook.</p>
+
+                        <div class="footer-location flex">
+                            <i class='bx bx-map map-icon'></i>
+                            
+                            <div class="location-text">
+                                    17, Ashok Tower, Mother Teresa Sarani, Taltala, Park Street, Kolkata, West Bengal 700016
+                            </div>
+                        </div>
+                </div>
+
+                <div class="footer-linkContent">
+                        <ul class="footer-links">
+                                <h4 class="footerLinks-title">Facility</h4>
+
+                                <li><a href="#" class="footer-link">Private Room</a></li>
+                                <li><a href="#" class="footer-link">Meeting Room</a></li>
+                                <li><a href="#" class="footer-link">Event Room</a></li>
+                                <li><a href="#" class="footer-link">Creative Studio</a></li>
+                                <li><a href="#" class="footer-link">Custom Room</a></li>
+                        </ul>
+                        <ul class="footer-links">
+                                <h4 class="footerLinks-title">Facility</h4>
+
+                                <li><a href="faqs.html" class="footer-link">FAQS</a></li>
+                                <li><a target="_blank" href="images/privacy-policy.pdf" class="footer-link">Privacy Policy</a></li>
+                                <li><a href="service.html" class="footer-link">Our Service</a></li>
+                                <li><a target="_blank" href="influencerform.html" class="footer-link">Influencers</a></li>
+                                <li><a target="_blank" href="designcampaign.html" class="footer-link">Design Your Camapign</a></li>
+                                <li><a href="images/Rising Influencer.pdf" class="footer-link">Case Study</a></li>
+                        </ul>
+                        <ul class="footer-links">
+                                <h4 class="footerLinks-title">Support</h4>
+
+                                <li><a href="homelogin.html" class="footer-link">Home</a></li>
+                                <li><a href="about.html" class="footer-link">About us</a></li>
+                                <li><a href="careers.html" class="footer-link">Careers</a></li>
+                                <li><a href="review.html" class="footer-link">Review</a></li>
+                                <li><a href="blog.html" class="footer-link">Blog</a></li>
+                                <li><a href="contactus.html" class="footer-link">Contact</a></li>
+                                <li><a href="logout.html" class="footer-link">Log Out</a></li>
+                        </ul>
+                </div>
+        </div>
+        <div class="footer-copyRight">&#169; 2024 Made in India. All rigths reserved</div>
+    </footer>
+<!-- Footer Section ends here-->
+
+<!-- Scroll Up -->
+    <a href="#home" class="scrollUp-btn flex">
+            <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+    </a>
+
+</main>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!--gsap cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- custom JavaScript -->
+<script src="js/careerscript.js"></script>
+<script>
+        //jobs search bar starts here
+const jobs = [
+  {
+    title: "Software Engineer",
+    image: "images/careers/software-engineer.svg",
+    details:
+      "Responsible for designing, developing and maintaining software systems and applications. <br>MUMBAI",
+    openPositions: "2",
+    link: "jobform.html",
+  },
+
+  {
+    title: "Data Scientist",
+    image: "images/careers/data-scientist.svg",
+    details:
+      "Responsible for collecting, analyzing and interpreting large data sets to help organizations make better decisions. <br>GUJARAT",
+    openPositions: "3",
+    link: "jobform.html",
+  },
+
+  {
+    title: "Project Manager",
+    image: "images/careers/project-manager.svg",
+    details:
+      "Responsible for planning, executing and closing projects on time and within budget. <br>BIHAR",
+    openPositions: "1",
+    link: "jobform.html",
+  },
+
+  {
+    title: "Product Manager",
+    image: "images/careers/product-manager.svg",
+    details:
+      "Responsible for managing the entire product life cycle, from ideation to launch and post-launch maintenance. <br>ASSAM",
+    openPositions: "1",
+    link: "jobform.html",
+  },
+
+  {
+    title: "Sales Representative",
+    image: "images/careers/sales-representative.svg",
+    details:
+      "Responsible for reaching out to potential customers and closing sales deals. <br>GURGAON",
+    openPositions: "4",
+    link: "jobform.html",
+  },
+
+  {
+    title: "Marketing Manager",
+    image: "images/careers/marketing-manager.svg",
+    details:
+      "Responsible for creating and executing marketing strategies to promote a company or product. <br>MUMBAI",
+    openPositions: "1",
+    link: "jobform.html",
+  },
+];
+
+const jobsHeading = document.querySelector(".jobs-list-container h2");
+const jobsContainer = document.querySelector(".jobs-list-container .jobs");
+const jobSearch = document.querySelector(".jobs-list-container .job-search");
+
+let searchTerm = "";
+
+if (jobs.length == 1) {
+  jobsHeading.innerHTML = `${jobs.length} Jobs`;
+} else {
+  jobsHeading.innerHTML = `${jobs.length} Jobs`;
+}
+
+const createJobListingCards = () => {
+  jobsContainer.innerHTML = "";
+
+  jobs.forEach((job) => {
+    if (job.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+      let jobCard = document.createElement("div");
+      jobCard.classList.add("job");
+
+      let image = document.createElement("img");
+      image.src = job.image;
+
+      let title = document.createElement("h3");
+      title.innerHTML = job.title;
+      title.classList.add("job-title");
+
+      let details = document.createElement("div");
+      details.innerHTML = job.details;
+      details.classList.add("details");
+
+      let detailsBtn = document.createElement("a");
+      detailsBtn.href = job.link;
+      detailsBtn.innerHTML = "More Details";
+      detailsBtn.classList.add("details-btn");
+
+      let openPositions = document.createElement("span");
+      openPositions.classList.add("open-positions");
+
+      if (job.openPositions == 1) {
+        openPositions.innerHTML = `${job.openPositions} open position`;
+      } else {
+        openPositions.innerHTML = `${job.openPositions} open positions`;
+      }
+
+      jobCard.appendChild(image);
+      jobCard.appendChild(title);
+      jobCard.appendChild(details);
+      jobCard.appendChild(detailsBtn);
+      jobCard.appendChild(openPositions);
+
+      jobsContainer.appendChild(jobCard);
+    }
+  });
+};
+
+createJobListingCards();
+
+jobSearch.addEventListener("input", (e) => {
+  searchTerm = e.target.value;
+
+  createJobListingCards();
+});
+
+//jobs search bar ends here
+</script>
+</body>
+</html>
